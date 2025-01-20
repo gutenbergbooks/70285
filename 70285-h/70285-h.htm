@@ -1,0 +1,2170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>
+      The Snow Man | Project Gutenberg
+    </title>
+    <link rel="icon" href="images/cover.jpg" type="image/x-cover">
+    <style>
+
+body {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+    h1,h2,h3,h4,h5,h6 {
+    text-align: center; /* all headings centered */
+    clear: both;
+}
+
+p {
+    margin-top: .51em;
+    text-align: justify;
+    margin-bottom: .49em;
+}
+
+.p2       {margin-top: 2em;}
+.p4       {margin-top: 4em;}
+.p6       {margin-top: 6em;}
+
+hr {
+    width: 33%;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    margin-left: 33.5%;
+    margin-right: 33.5%;
+    clear: both;
+}
+
+hr.tb   {width: 45%; margin-left: 27.5%; margin-right: 27.5%;}
+hr.chap {width: 65%; margin-left: 17.5%; margin-right: 17.5%;}
+hr.full {width: 95%; margin-left: 2.5%; margin-right: 2.5%;}
+
+hr.r5  {width: 5%; margin-top: 1em; margin-bottom: 1em; margin-left: 47.5%; margin-right: 47.5%;}
+hr.r65 {width: 65%; margin-top: 3em; margin-bottom: 3em; margin-left: 17.5%; margin-right: 17.5%;}
+
+div.chapter {page-break-before: always;}
+h2.nobreak  {page-break-before: avoid;}
+
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+}
+table.autotable    { border-collapse: collapse; }
+table.autotable td,
+table.autotable th { padding: 0.25em; }
+
+.tdl      {text-align: left;}
+.tdr      {text-align: right;}
+.tdc      {text-align: center;}
+.tdrh     {text-align: right; vertical-align: middle;}
+
+.pagenum { /* uncomment the next line for invisible page numbers */
+    /*  visibility: hidden;  */
+    position: absolute;
+    left: 92%;
+    font-size: small;
+    text-align: right;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-indent: 0;
+} /* page numbers */
+
+
+.center   {text-align: center;}
+
+.right    {text-align: right;}
+
+.smcap    {font-variant: small-caps;}
+
+.allsmcap {font-variant: small-caps; text-transform: lowercase;}
+
+.u        {text-decoration: underline;}
+
+.gesperrt
+{
+    letter-spacing: 0.2em;
+    margin-right: -0.2em;
+}
+
+em.gesperrt
+{
+    font-style: normal;
+}
+
+.caption  {font-weight: bold;}
+
+/* Images */
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+img.w100 {width: 100%;}
+
+
+/* Footnotes */
+.footnotes        {border: 1px dashed;}
+
+.footnote         {margin-left: 10%; margin-right: 10%; font-size: 0.9em;}
+
+.footnote .label  {position: absolute; right: 84%; text-align: right;}
+
+.fnanchor {
+    vertical-align: super;
+    font-size: .8em;
+    text-decoration:
+    none;
+}
+
+/* Poetry */
+/* uncomment the next line for centered poetry */
+/* .poetry-container {display: flex; justify-content: center;} */
+.poetry-container {text-align: center;}
+.poetry           {text-align: left; margin-left: 5%; margin-right: 5%;}
+.poetry .stanza   {margin: 1em auto;}
+.poetry .verse    {text-indent: -3em; padding-left: 3em;}
+
+/* Transcriber's notes */
+.transnote {background-color: #E6E6FA;
+    color: black;
+    font-size:small;
+    padding:0.5em;
+    margin-bottom:5em;
+    font-family:sans-serif, serif;
+}
+
+/* overrides of basic settings */
+p { text-indent: 1.5em;}
+
+table.autotable td,
+table.autotable th { padding: .3em; }
+
+.bbox     { padding: 2em;}
+
+ul { list-style-type: none; }
+
+.footnote         {
+                   padding-left: 1.5em;
+                   text-indent: -1.5em;}
+
+.x-ebookmaker .poetry {display: block;}
+
+.x-ebookmaker .linenum {
+    position: absolute;
+    top: auto;
+    left: 15%;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+left: 5%;
+float: left;
+clear: left;
+margin-left: -5em;
+}
+
+/* additional definitions */
+hr.double-bot {width: 65%; margin-top: 0.1em; margin-bottom: 3em; margin-left: 17.5%; margin-right: 17.5%;}
+hr.double-top {height: 0.2em; background: black; width: 65%; margin-top: 0.1em; margin-bottom: 0.1em; margin-left: 17.5%; margin-right: 17.5%;}
+/* spaced dots */
+/* <p><span style="margin-left: 1.5em;">.</span><span style="margin-left: 1.5em;">.</span><span style="margin-left: 1.5em;">.</span><span style="margin-left: 1.5em;">.</span><span style="margin-left: 1.5em;">.</span><span style="margin-left: 1.5em;">.</span><span style="margin-left: 1.5em;">.</span> */
+/* <p><span style="margin-left: 1.5em;">*</span><span style="margin-left: 1.5em;">*</span><span style="margin-left: 1.5em;">*</span><span style="margin-left: 1.5em;">*</span><span style="margin-left: 1.5em;">*</span> */
+
+.biblio    {list-style-type: none;
+            padding-left: 2em;
+            text-indent: -2em !important;}
+
+.noindent {text-indent: 0em}
+
+.center   {text-align: center;
+           text-indent: 0;}
+
+.credit   {text-align: right;
+           margin-top: -0.5em;}
+
+.hang { padding-left:1.5em; text-indent:-1.5em; }
+
+.ph2       {margin-top: 2em;
+           text-align: center;
+           font-size: 1.5em;
+           text-indent: 0em;
+           font-weight: bold; }
+
+.ph3       {margin-top: 1em;
+           text-align: center;
+           font-size: 1.2em;
+           text-indent: 0em;
+           font-weight: bold; }
+
+
+.ml       {margin-left: 1em;}
+
+.front {text-align: center;
+        text-indent: 0;
+        max-width: 40em;
+        margin: auto;}
+
+/* Drop Caps */
+.illo_drop {
+        float: left;
+        clear: left;
+        width: auto;
+        height: 3.2em;
+        margin: -.5em 0em .1em -4em; }
+
+.x-ebookmaker .illo_drop {
+          display: none;}
+
+img.drop-cap
+{
+  float: left;
+  margin: 0 0.5em 0 0;
+}
+
+p.drop-cap:first-letter
+{
+  color: transparent;
+  margin-left: -0.9em;
+}
+
+.poetry .drop-cap:first-letter
+{color: transparent;
+  margin-left: 0em;
+}
+
+/* Text-only drop cap */
+.dropcap {
+    float: left;
+    padding-right: 0.1em;
+    font-size: 250%;
+    line-height: 83%
+    }
+
+/* use this to move text closer to dropped cap if necessary */
+/* note ebookmaker cannot handle negative margins */
+.close {margin-left: -0.5em;}
+.x-ebookmaker .close {margin-left: 0em;}
+
+.x-ebookmaker-2 img.drop-cap
+{
+  display: none;
+}
+
+.x-ebookmaker-2 .drop-cap:first-letter
+{
+  color: black;
+  margin-left: 0em;
+}
+
+
+
+.xbig {font-size: 2em;}
+.big {font-size: 1.2em;}
+.small {font-size: 0.8em;}
+.double {font-size: 250%;}
+
+/* Poetry indents */
+.poetry .indent14 {text-indent: 4em;}
+.poetry .indent2 {text-indent: -2em;}
+.poetry .indent4 {text-indent: -1em;}
+.poetry .indent6 {text-indent: 0em;}
+
+
+    </style>
+</head>
+<body>
+<p style='text-align:center; font-size:1.2em; font-weight:bold'>The Project Gutenberg eBook of The Snow Man, by Laurence Housman</p>
+<div style='display:block; margin:1em 0'>
+This eBook is for the use of anyone anywhere in the United States and
+most other parts of the world at no cost and with almost no restrictions
+whatsoever. You may copy it, give it away or re-use it under the terms
+of the Project Gutenberg License included with this eBook or online
+at <a href="https://www.gutenberg.org">www.gutenberg.org</a>. If you
+are not located in the United States, you will have to check the laws of the
+country where you are located before using this eBook.
+</div>
+
+<p style='display:block; margin-top:1em; margin-bottom:0; margin-left:2em; text-indent:-2em'>Title: The Snow Man</p>
+<p style='display:block; margin-left:2em; text-indent:0; margin-top:0; margin-bottom:1em;'>A metrical play in one act</p>
+<p style='display:block; margin-top:1em; margin-bottom:0; margin-left:2em; text-indent:-2em'>Author: Laurence Housman</p>
+<p style='display:block; text-indent:0; margin:1em 0'>Release Date: March 14, 2023 [eBook #70285]</p>
+<p style='display:block; text-indent:0; margin:1em 0'>Language: English</p>
+  <p style='display:block; margin-top:1em; margin-bottom:0; margin-left:2em; text-indent:-2em; text-align:left'>Produced by: Charlene Taylor, Krista Zaleski and the Online Distributed Proofreading Team at https://www.pgdp.net (This file was produced from images generously made available by The Internet Archive/American Libraries.)</p>
+<div style='margin-top:2em; margin-bottom:4em'>*** START OF THE PROJECT GUTENBERG EBOOK THE SNOW MAN ***</div>
+
+<div class="transnote">
+<p>Transcriber’s Notes</p>
+
+<p>Obvious typographical errors have been silently corrected. Variations
+in hyphenation and accents have been standardised but all other
+spelling and punctuation remains unchanged.</p>
+
+</div>
+
+
+
+<h1>  The Snow Man:<br> a Metrical
+  Play in One Act:<br>
+  by Laurence Housman</h1>
+
+
+<p class="center p6 xbig">  Samuel French: Publisher</p>
+
+<p class="center">  28-30 West Thirty-eighth Street: New York</p>
+
+<p class="center small">  LONDON</p>
+
+<p class="center big">  Samuel French, Ltd.</p>
+
+<p class="center small">  <span class="smcap">26 Southampon Street Strand</span></p>
+
+
+<p class="center">  <i>PRICE TWENTY-FIVE CENTS</i>
+</p>
+
+
+<hr class="chap x-ebookmaker-drop">
+
+<div class="chapter">
+
+
+<p class="center p6">  Copyright, 1916,<br>
+  by LAURENCE HOUSMAN
+</p>
+
+</div>
+
+<p class="center hang p6">CAUTION.—Amateurs and Professionals are hereby warned that
+“THE SNOW MAN”, being fully protected under the copyright
+laws of the United States, is subject to royalty, and any
+one presenting the play without the consent of the author or
+his authorized agent, will be liable to the penalties by law
+provided. Application for the right to produce “THE SNOW MAN”
+must be made to Samuel French, 28-30 West 38th Street, New York
+City.</p>
+
+<p class="center p2">ALL RIGHTS RESERVED.</p>
+
+
+<hr class="chap x-ebookmaker-drop">
+
+<div class="chapter">
+<h2 class="nobreak" id="THE_SNOW_MAN">THE SNOW MAN.</h2>
+</div>
+<hr class="r5">
+
+<h2 class="nobreak" id="CHARACTERS">CHARACTERS.</h2>
+
+
+<p><span class="pagenum" id="Page_5">[Pg 5]</span></p>
+
+<table class="autotable">
+<tr>
+<td class="tdl"> <span class="smcap">Joan</span></td>
+<td class="tdl"></td>
+<td class="tdr"> <i>A peasant woman</i></td>
+</tr>
+<tr>
+<td class="tdl"> <span class="smcap">Mary Ann</span></td>
+<td class="tdl" rowspan="2"> <span class="double">}</span></td>
+<td class="tdrh" rowspan="2"> <i>Her children</i></td>
+</tr>
+<tr>
+<td class="tdl"> <span class="smcap">Matthew Mark</span></td>
+</tr>
+<tr>
+<td class="tdl"> <span class="smcap">Jaspar</span></td>
+<td class="tdl"></td>
+<td class="tdr"> <i>Her husband</i></td>
+</tr>
+<tr>
+<td class="tdl"> <span class="smcap">The Snow Man</span></td>
+<td class="tdl"></td>
+<td class="tdl"></td>
+</tr>
+</table>
+
+<hr class="chap x-ebookmaker-drop">
+
+<div class="chapter">
+<h2 class="nobreak">THE SNOW MAN</h2>
+</div>
+
+
+<p class="hang"><span class="smcap">Scene</span>:—<i>A poor peasant dwelling, barely furnished
+with articles of the roughest description, a tressle-table, two
+benches,—a large one serving as a window-seat, and a smaller
+one standing by the hearth,—a wooden chair, a spinning wheel,
+a large bread pan, a shelf containing household crockery, and
+on the inner wall of the ingle a few pots and pans hanging
+on the wall. The room is wide and low; to the left is a deep
+hooded fireplace with containing walls on either side of
+it,—to one side a bread oven, to the other a cubby-bed with
+doors; opposite to the fireplace is a door leading to the
+woodshed. The house door is at the back rather to the right;
+in its left a long low window extends almost to a line with
+the fireplace. In the right hand corner stands a large chest.
+The roof is of heavy beams gray with smoke, and between them
+shows an inner surface of thatch, the walls are of blue plaster
+marked by mildew, with patches here and there where the plaster
+has peeled off. It is winter and daylight is drawing in.
+Outside the world is white with snow. A peasant-woman moves
+to and fro with quick dogged pace. The pace of a hard worker
+tired but always pushed for time. She takes black bread out of
+the oven, lays it out on the table, cuts off two pieces, and
+puts the remainder into the bread-pan. Then she takes down the
+garments from before the fire, presses them with a heavy iron,
+and puts them<span class="pagenum" id="Page_6">[Pg 6]</span> away in the chest. While crossing the room to
+and fro she economizes her time, never going empty-handed.
+She puts milk to warm on the fire, and gets down two small
+mugs from a shelf. She also gets from the cubby-bed two night
+garments, and hangs them to warm over the bench by the hearth.
+While she is thus engaged, children’s voices are heard outside,
+laughing and shouting. The woman, absorbed in her work, pays
+no attention. Two small romping figures occasionally pass the
+window. Presently they begin to sing.</i></p>
+
+<p><span class="smcap">Children.</span>—</p>
+
+<div class="poetry-container">
+<div class="poetry">
+  <div class="stanza">
+    <div class="verse indent2">Here we have a snowman, a snowman, a snowman!</div>
+    <div class="verse indent2">Oh, where does he come from, and what shall be his name?</div>
+    <div class="verse indent2">He says his name is no man, no man, no man!</div>
+    <div class="verse indent2">And nowhere and nowhere the land from which he came.</div>
+  </div>
+</div>
+</div>
+
+<p class="center">(<i>Now again</i>)</p>
+
+<div class="poetry-container">
+<div class="poetry">
+  <div class="stanza">
+    <div class="verse indent2">Oh, why did you come here, oh, snowman, oh, snowman?</div>
+    <div class="verse indent2">And will you now a friend be, or will you be a foe?</div>
+    <div class="verse indent2">“Oh, whether I a friend am, or whether I’m a foe-man,</div>
+    <div class="verse indent2">It’s here I mean to stay now, until I have to go!”</div>
+  </div>
+</div>
+</div>
+
+<p class="center">(<i>Now again</i>)</p>
+
+
+<div class="poetry-container">
+<div class="poetry">
+  <div class="stanza">
+    <div class="verse indent2">But what should you go for, oh, snowman, oh, snowman?</div>
+    <div class="verse indent2">And why would you leave us, when home lies at hand?</div>
+    <div class="verse indent2">“Oh, when the sun calls me, then I can wait for no man,</div>
+    <div class="verse indent2">But back I must go again, to my own land!”</div><span class="pagenum" id="Page_7">[Pg 7]</span>
+    <div class="verse indent2">And now we’ve made him, he’ll have to stay,</div>
+    <div class="verse indent2">Ha! Ha! Ha! He can’t get away.</div>
+  </div>
+</div>
+</div>
+
+<p class="center">(<i>The door bursts open, the two children run in</i>:
+<span class="smcap">Matthew Mark</span> <i>and</i> <span class="smcap">Mary Ann</span>.)</p>
+
+
+<p><span class="smcap">Mary.</span>—</p>
+
+<div class="poetry-container">
+<div class="poetry">
+  <div class="stanza">
+    <div class="verse indent2">Oh, mother, come and look at our snowman.</div>
+  </div>
+</div>
+</div>
+
+<p><span class="smcap">Matthew.</span>—</p>
+
+<div class="poetry-container">
+<div class="poetry">
+  <div class="stanza">
+    <div class="verse indent2">Mother, do look at him.</div>
+  </div>
+</div>
+</div>
+
+<p><span class="smcap">Mary.</span>—</p>
+
+<div class="poetry-container">
+<div class="poetry">
+  <div class="stanza">
+    <div class="verse indent2">When we began</div>
+    <div class="verse indent2">A-building him, we didn’t ever know</div>
+    <div class="verse indent2">How big he’d get to be—he seemed to grow</div>
+    <div class="verse indent2">All by himself!</div>
+  </div>
+</div>
+</div>
+
+<p><span class="smcap">Matthew.</span>—</p>
+
+<div class="poetry-container">
+<div class="poetry">
+  <div class="stanza">
+    <div class="verse indent2">Mother, do look!</div>
+  </div>
+</div>
+</div>
+
+<p><span class="smcap">Joan.</span>—</p>
+
+<div class="poetry-container">
+<div class="poetry">
+  <div class="stanza">
+    <div class="verse indent2">There, there!</div>
+    <div class="verse indent2">It’s “look,” “look,” “look,” all day!</div>
+  </div>
+</div>
+</div>
+
+<p class="center">(<i>She speaks in a good-humored scolding tone which the
+children seem not in the least afraid of. She goes and looks
+out</i>)</p>
+
+<div class="poetry-container">
+<div class="poetry">
+  <div class="stanza">
+    <div class="verse indent2">Well, I declare,</div>
+    <div class="verse indent2">You’ve done a silly thing—made ’im to stand</div>
+    <div class="verse indent2">Right in the door!—with no room either ’and</div>
+    <div class="verse indent2">For folks to get by.</div>
+  </div>
+</div>
+</div>
+
+<p><span class="smcap">Matthew.</span>—</p>
+
+<div class="poetry-container">
+<div class="poetry">
+  <div class="stanza">
+    <div class="verse indent2">Yah!</div>
+  </div>
+</div>
+</div>
+
+<p><span class="smcap">Mary.</span>—</p>
+
+<div class="poetry-container">
+<div class="poetry">
+  <div class="stanza">
+    <div class="verse indent2">Yah! Ah, ha! That’s why.</div>
+  </div>
+</div>
+</div>
+
+<p><span class="smcap">Matthew.</span>—</p>
+
+<div class="poetry-container">
+<div class="poetry">
+  <div class="stanza">
+    <div class="verse indent2">We didn’t want to let no folk get by</div>
+    <div class="verse indent2">To steal our muvver!</div>
+  </div>
+</div>
+</div>
+
+<p class="center">(<i>He rubs against her</i>)</p>
+
+<p><span class="pagenum" id="Page_8">[Pg 8]</span></p>
+
+<p><span class="smcap">Joan.</span>—</p>
+
+<div class="poetry-container">
+<div class="poetry">
+  <div class="stanza">
+    <div class="verse indent2">Here, and what d’yer mean</div>
+    <div class="verse indent2">Getting yourself all wet like this? You’ve been</div>
+    <div class="verse indent2">And clammed yourself,—you too. Now off you go!</div>
+    <div class="verse indent2">Take all those things off! One can’t ever know</div>
+    <div class="verse indent2">What children will be up to next. Come here!</div>
+  </div>
+</div>
+</div>
+
+<p class="center">(<i>Catches hold of</i> <span class="smcap">Matthew</span>)</p>
+
+<div class="poetry-container">
+<div class="poetry">
+  <div class="stanza">
+    <div class="verse indent2">Now you undress yourself.</div>
+  </div>
+</div>
+</div>
+
+<p class="center">(<i>To</i> <span class="smcap">Mary</span>)</p>
+
+<div class="poetry-container">
+<div class="poetry">
+  <div class="stanza">
+    <div class="verse indent2">You get in there</div>
+    <div class="verse indent2">Into the warm. Stand still, stand still, I say,</div>
+    <div class="verse indent2">And put this round yer. Oh, so that’s the way</div>
+    <div class="verse indent2">You do when I ain’t looking? All day long</div>
+    <div class="verse indent2">You’re up to mischief. Always something wrong</div>
+    <div class="verse indent2">Soon as my back is turned. That heap o’ snow</div>
+    <div class="verse indent2">How long’s that to stay there, I’d like to know?</div>
+    <div class="verse indent2">Here, take your milk, and there’s a bit o’ bread</div>
+    <div class="verse indent2">For both on yer. Don’t want it? Ah, it’s bed</div>
+    <div class="verse indent2">You’d best be off to! There, put your mug down!</div>
+    <div class="verse indent2">Now come and get into your nighty-gown.</div>
+    <div class="verse indent2">Ah, you sweet thing! Well, kiss your mother then!</div>
+    <div class="verse indent2">But you mind what I say—no more snowmen</div>
+    <div class="verse indent2">To-morrow!</div>
+  </div>
+</div>
+</div>
+
+<p class="center">(<i>Crosses the room</i>)</p>
+
+<p><span class="smcap">Mary.</span>—</p>
+
+<div class="poetry-container">
+<div class="poetry">
+  <div class="stanza">
+    <div class="verse indent2">Mother—Mother—will there be</div>
+    <div class="verse indent2">Anyone here to-morrow? Shan’t we see</div>
+    <div class="verse indent2">Someone?</div>
+  </div>
+</div>
+</div>
+
+<p><span class="smcap">Joan.</span>—</p>
+
+<div class="poetry-container">
+<div class="poetry">
+  <div class="stanza">
+    <div class="verse indent2">See someone?</div>
+  </div>
+</div>
+</div>
+
+<p><span class="smcap">Mary.</span>—</p>
+
+<div class="poetry-container">
+<div class="poetry">
+  <div class="stanza">
+    <div class="verse indent2">I mean, won’t there no</div>
+    <div class="verse indent2">Man come with a spade and clear away the snow?</div><span class="pagenum" id="Page_9">[Pg 9]</span>
+    <div class="verse indent2">Last year one come.</div>
+  </div>
+</div>
+</div>
+
+<p><span class="smcap">Joan.</span>—</p>
+
+<div class="poetry-container">
+<div class="poetry">
+  <div class="stanza">
+    <div class="verse indent2">That was your father,—he</div>
+    <div class="verse indent2">Haven’t been near us since, and where he be</div>
+    <div class="verse indent2">God alone knows. Here! Don’t fill your ’ead</div>
+    <div class="verse indent2">With silly fancies! You get on to bed.</div>
+  </div>
+</div>
+</div>
+
+<p class="center">(<i>She goes out into the woodshed</i>)</p>
+
+<p><span class="smcap">Matthew.</span>—</p>
+
+<div class="poetry-container">
+<div class="poetry">
+  <div class="stanza">
+    <div class="verse indent2">Say! Say! She’s gone! come along, Mary Ann</div>
+    <div class="verse indent2">And have another look at our snowman.</div>
+  </div>
+</div>
+</div>
+
+<p class="center">(<i>They run across to the window</i>)</p>
+
+<div class="poetry-container">
+<div class="poetry">
+  <div class="stanza">
+    <div class="verse indent2">Snowman! Snowman!</div>
+  </div>
+</div>
+</div>
+
+<p><span class="smcap">Mary.</span> It’s no good, he don’t hear, he’s gone to sleep.</p>
+
+<p class="center">(<i>Re-enter</i> <span class="smcap">Joan</span>.)</p>
+
+<p><span class="smcap">Joan.</span> Ah, what are you up to there? Back you go, quick. Or
+else you’ll get the rod! (<i>They skip back to the fireplace</i>) Now
+you kneel down and say your prayers. “Pray God”——</p>
+
+<p class="center">(<i>The two children kneel at bench with their backs to the
+fire.</i>)</p>
+
+<p><span class="smcap">Children.</span> “Pray God”——</p>
+
+<p><span class="smcap">Joan.</span> (<i>As she moves about folding up clothes, etc.</i>)
+“Pray God make Baba good”——</p>
+
+<p><span class="smcap">Children.</span> Pray God make Baba good.</p>
+
+<p><span class="smcap">Joan.</span> “Give Baba bread.”</p>
+
+<p><span class="smcap">Children.</span> Give Baba bread.</p>
+
+<p><span class="smcap">Joan.</span> “Give all the hungry food”——</p>
+
+<p><span class="smcap">Children.</span> Give all the hungry food.</p>
+
+<p><span class="smcap">Joan.</span> “Peace to the dead.” (<i>Crosses herself</i>)</p>
+
+<p><span class="smcap">Children.</span> Peace to the dead.</p>
+
+<p><span class="pagenum" id="Page_10">[Pg 10]</span></p>
+
+<p class="center">(<span class="smcap">Joan</span> <i>stands lost in reverie and speaks
+unconsciously by rote</i>.)</p>
+
+<p><span class="smcap">Joan.</span> “God bless”—(<i>She turns and looks out</i>)</p>
+
+<p><span class="smcap">Children.</span> God bless—(<i>They wait to be prompted</i>)</p>
+
+<p><span class="smcap">Matthew.</span> Say, muvver, shall we pray for the snowman too? Shall
+us? Shall us?</p>
+
+<p><span class="smcap">Joan.</span> (<i>Still musing</i>) Nay, nay! You leave the snowman
+out! He knows his way—he knows his way.</p>
+
+<p><span class="smcap">Children.</span>—</p>
+
+<div class="poetry-container">
+<div class="poetry">
+  <div class="stanza">
+    <div class="verse indent14">{ sister }</div>
+    <div class="verse indent2">Bless mother, { brother } kind friends all about,</div>
+    <div class="verse indent2">Bring Dada home, and leave the snowman out.</div>
+    <div class="verse indent6">Amen.</div>
+  </div>
+</div>
+</div>
+
+<p class="center">(<span class="smcap">Joan</span> <i>stands lost in her own thoughts. The children
+creep behind her toward the window.</i>)</p>
+
+<p><span class="smcap">Mary.</span> Good-night, snowman!</p>
+
+<p><span class="smcap">Matthew.</span> Good-night!</p>
+
+<p class="center">(<i>They approach</i> <span class="smcap">Joan</span>.)</p>
+
+<p><span class="smcap">Mary.</span> Good-night, mother!</p>
+
+<p><span class="smcap">Joan.</span> Good-night, darling!</p>
+
+<p><span class="smcap">Matthew.</span> Night, mother.</p>
+
+<p><span class="smcap">Joan.</span> Night-night, my dear,—night-night!</p>
+
+<p class="center">(<span class="smcap">Mary Ann</span> <i>goes and opens cubby-bed and begins to
+climb in</i>. <span class="smcap">Matthew</span> <i>stops outside</i>.)</p>
+
+<p><span class="smcap">Matthew.</span>—</p>
+
+<div class="poetry-container">
+<div class="poetry">
+  <div class="stanza">
+    <div class="verse indent2">Matthew, Mark, Luke and John,</div>
+    <div class="verse indent2">Guard the bed that I lie on;</div>
+    <div class="verse indent2">Four corners to my bed,</div>
+    <div class="verse indent2">Four angels at my head,</div><span class="pagenum" id="Page_11">[Pg 11]</span>
+    <div class="verse indent2">One to watch, and one to pray,</div>
+    <div class="verse indent2">And two to——</div>
+  </div>
+</div>
+</div>
+
+<p><span class="smcap">Joan.</span> There, you get in! you’ve prayed enough to-night.
+(<i>She goes to close doors</i>)</p>
+
+<p><span class="smcap">Mary.</span> Don’t shut it up yet, mother, leave a light.</p>
+
+<p><span class="smcap">Joan.</span>—</p>
+
+<div class="poetry-container">
+<div class="poetry">
+  <div class="stanza">
+    <div class="verse indent2">Just you be quiet. Be thankful you lie warm,</div>
+    <div class="verse indent2">There’s some as won’t to-night. I can hear storm</div>
+    <div class="verse indent2">A-coming on.</div>
+  </div>
+</div>
+</div>
+
+<p class="center">(<i>She leaves door of cubby-bed half open.</i>)</p>
+
+<p><span class="smcap">Matthew.</span> Sing, mother, will ye sing?</p>
+
+<p><span class="smcap">Joan.</span> (<i>Putting away the bread and the milk-mugs and folding
+up the strewn garments; starts to sing in a dull toneless voice with
+little tune</i>)</p>
+
+<div class="poetry-container">
+<div class="poetry">
+  <div class="stanza">
+    <div class="verse indent2">There come a man to a maid, and said,</div>
+    <div class="verse indent4">All in a year and a day——</div>
+    <div class="verse indent2">“So thou be mine now let us be wed</div>
+    <div class="verse indent4">Out of the world and away.”</div>
+  </div>
+  <div class="stanza">
+    <div class="verse indent2">Said the maid to the man, “If I thee wed</div>
+    <div class="verse indent4">Out of the world and away,</div>
+    <div class="verse indent2">Bide ’e at home, and find me bread——</div>
+    <div class="verse indent4">Just for a year and a day.”</div>
+  </div>
+  <div class="stanza">
+    <div class="verse indent2">They hadn’t been wed, the maid and the man,</div>
+    <div class="verse indent4">For a year, for a year and a day,</div>
+    <div class="verse indent2">Before a want in his heart began,</div>
+    <div class="verse indent4">To be out to the world and away.</div>
+  </div>
+  <div class="stanza">
+    <div class="verse indent2">“Oh, wife, there’s come a call to my blood,</div>
+    <div class="verse indent4">To be out in the world and away,</div>
+    <div class="verse indent2">By road and river, by field and flood,</div>
+    <div class="verse indent4">Just for a year and a day.”</div>
+  </div>
+  <div class="stanza">
+    <div class="verse indent2">Out and away to the world he went,</div>
+    <div class="verse indent4">By road and river and sea.</div><span class="pagenum" id="Page_12">[Pg 12]</span>
+    <div class="verse indent2">Oh, man of the road, is your heart content?</div>
+    <div class="verse indent4">Will ’e never come back to me?</div>
+  </div>
+</div>
+</div>
+
+<p class="center">(<i>She goes and looks at the children and sees that they are
+asleep</i>)</p>
+
+<div class="poetry-container">
+<div class="poetry">
+  <div class="stanza">
+    <div class="verse indent2">Oh, man of the road, is your heart content?</div>
+    <div class="verse indent4">Will ’e never come back to me?</div>
+  </div>
+</div>
+</div>
+
+<p class="center">(<i>While she sings, the firelight dies down and the light of
+the candle loses its warmth. Outside is a sound of rising wind,
+and the soft lash of snow against the pane. She goes and looks
+out of window</i>)</p>
+
+<div class="poetry-container">
+<div class="poetry">
+  <div class="stanza">
+    <div class="verse indent2">Ah, there be storm, black blasts with icy breath!</div>
+    <div class="verse indent2">The night’s gone colder now, aye cold like death,</div>
+    <div class="verse indent2">Cold!</div>
+  </div>
+</div>
+</div>
+
+<p class="center">(<i>She shivers—three knocks are struck on the door</i>)</p>
+
+<div class="poetry-container">
+<div class="poetry">
+  <div class="stanza">
+    <div class="verse indent2">Who be there? Who is it? Whence do’e come?</div>
+  </div>
+</div>
+</div>
+
+<p class="center">(<i>Another knock, very faint</i>)</p>
+
+<div class="poetry-container">
+<div class="poetry">
+  <div class="stanza">
+    <div class="verse indent2">Have you no word? What, are ye deaf and dumb?</div>
+    <div class="verse indent4">Or—dead?</div>
+  </div>
+</div>
+</div>
+
+<p class="center">(<i>Knock. The light burns blue. She opens the door. Pause.
+Slowly the snowman enters and moves across the room toward the
+bed</i>)</p>
+
+<div class="poetry-container">
+<div class="poetry">
+  <div class="stanza">
+    <div class="verse indent2">No, stop! Not there, not there!</div>
+  </div>
+</div>
+</div>
+
+<p class="center">(<i>She interposes and lays hold of him. A cold rigour seizes
+her</i>)</p>
+
+<p><span class="smcap">Snowman.</span> Why do you touch me?</p>
+
+<p><span class="smcap">Joan.</span> Why do you come here? Who are you?<span class="pagenum" id="Page_13">[Pg 13]</span> Answer! (<i>He again
+moves forward</i>) No, you don’t go there! You shan’t, you shan’t come
+nigh of ’em.</p>
+
+<p><span class="smcap">Snowman.</span> Take care! My touch is—cold!</p>
+
+<p><span class="smcap">Joan.</span>—</p>
+
+<div class="poetry-container">
+<div class="poetry">
+  <div class="stanza">
+    <div class="verse indent2">You think I’m feard o’ that?</div>
+    <div class="verse indent2">You think them eyes as I be looking at</div>
+    <div class="verse indent2">Have any fear for me, or shape of dread?</div>
+    <div class="verse indent2">Worse that what life ’ave?</div>
+  </div>
+</div>
+</div>
+
+<p class="center">(<i>With a sort of exultation</i>)</p>
+
+<div class="poetry-container">
+<div class="poetry">
+  <div class="stanza">
+    <div class="verse indent2">Why, if I were dead!</div>
+  </div>
+</div>
+</div>
+
+<p class="center">(<i>Pause. The snowman lifts his hand and points toward the
+bed.</i> <span class="smcap">Joan</span> <i>sees his meaning</i>.)</p>
+
+<p><span class="smcap">Snowman.</span> If you were dead?</p>
+
+<p><span class="smcap">Joan.</span>—</p>
+
+<div class="poetry-container">
+<div class="poetry">
+  <div class="stanza">
+    <div class="verse indent2">No, no, I say you lie!</div>
+    <div class="verse indent2">My little ’uns? God wouldn’t let ’em die.</div>
+    <div class="verse indent2">’A wouldn’t have the heart, ’a wouldn’t have the heart.</div>
+  </div>
+</div>
+</div>
+
+<p><span class="smcap">Snowman.</span>—</p>
+
+<div class="poetry-container">
+<div class="poetry">
+  <div class="stanza">
+    <div class="verse indent2">Yet there’s a heart,</div>
+    <div class="verse indent4">Now quick to beat,</div>
+    <div class="verse indent2">Which, this same night,</div>
+    <div class="verse indent4">Must lose its heat.</div>
+    <div class="verse indent2">To give strength to a lame man’s feet.</div>
+  </div>
+</div>
+</div>
+
+<p><span class="smcap">Joan.</span>—</p>
+
+<div class="poetry-container">
+<div class="poetry">
+  <div class="stanza">
+    <div class="verse indent2">A lame man?</div>
+  </div>
+</div>
+</div>
+
+<p><span class="smcap">Snowman.</span>—</p>
+
+<div class="poetry-container">
+<div class="poetry">
+  <div class="stanza">
+    <div class="verse indent2">Gray-headed, bent,</div>
+    <div class="verse indent2">He scarce can go,</div>
+    <div class="verse indent2">His strength is spent</div>
+    <div class="verse indent2">In drifts of snow,</div>
+    <div class="verse indent2">And all the icy blasts that blow.</div>
+  </div>
+</div>
+</div>
+
+<p><span class="smcap">Joan.</span>—</p>
+
+<div class="poetry-container">
+<div class="poetry">
+  <div class="stanza">
+    <div class="verse indent2">I don’t know who you mean.</div>
+  </div>
+</div>
+</div>
+<p><span class="pagenum" id="Page_14">[Pg 14]</span></p>
+<p><span class="smcap">Snowman.</span>—</p>
+
+<div class="poetry-container">
+<div class="poetry">
+  <div class="stanza">
+    <div class="verse indent2">Give me your hand,</div>
+    <div class="verse indent2">And you shall see,</div>
+    <div class="verse indent2">Here, close at hand, snow-bound goes he.</div>
+    <div class="verse indent2">Give me your hand,</div>
+    <div class="verse indent2">And come with me.</div>
+  </div>
+</div>
+</div>
+
+<p><span class="smcap">Joan.</span>—</p>
+
+<div class="poetry-container">
+<div class="poetry">
+  <div class="stanza">
+    <div class="verse indent2">With you? Why do you think I’d come with you?</div>
+    <div class="verse indent2">I’ve got my children, I’ve a husband, too,</div>
+    <div class="verse indent2">One as I love.</div>
+  </div>
+</div>
+</div>
+
+<p><span class="smcap">Snowman.</span>—</p>
+
+<div class="poetry-container">
+<div class="poetry">
+  <div class="stanza">
+    <div class="verse indent2">And he—does he love you?</div>
+  </div>
+</div>
+</div>
+
+<p><span class="smcap">Joan.</span>—</p>
+
+<div class="poetry-container">
+<div class="poetry">
+  <div class="stanza">
+    <div class="verse indent2">That’s no concern o’ yourn!</div>
+    <div class="verse indent2">Aye, ’a did once, Aye! and ’a will again,</div>
+    <div class="verse indent2">Some day, perhaps. When he first married me,</div>
+    <div class="verse indent2">’A did,—’a did! We’ve sat here in this room</div>
+    <div class="verse indent2">A-kissing by the hour! That were before</div>
+    <div class="verse indent2">The children come. Children do make a house</div>
+    <div class="verse indent2">No comfort to a man. He had his right</div>
+    <div class="verse indent2">To go. He didn’t want ’em, but I did!</div>
+    <div class="verse indent2">I did!</div>
+    <div class="verse indent2">Aye! and I’ve ’ad ’em now a whole seven years,</div>
+    <div class="verse indent2">Worked for ’em, I lived for ’em, starved for ’em,</div>
+    <div class="verse indent2">And I’d die</div>
+    <div class="verse indent2">So it could better ’em.</div>
+  </div>
+</div>
+</div>
+
+<p><span class="smcap">Snowman.</span>—</p>
+
+<div class="poetry-container">
+<div class="poetry">
+  <div class="stanza">
+    <div class="verse indent2">And what—for him?</div>
+  </div>
+</div>
+</div>
+
+<p><span class="smcap">Joan.</span>—</p>
+
+<div class="poetry-container">
+<div class="poetry">
+  <div class="stanza">
+    <div class="verse indent2">I’ve broke my ’eart for ’im; it’s past its work,</div>
+    <div class="verse indent2">And now it ain’t no use—no use—to ’im.</div>
+  </div>
+</div>
+</div>
+
+<p><span class="smcap">Snowman.</span>—</p>
+
+<div class="poetry-container">
+<div class="poetry">
+  <div class="stanza">
+    <div class="verse indent2">Its use has come. Oh, woman give</div>
+    <div class="verse indent2">Your heart to me, I’ll make it live.</div>
+    <div class="verse indent2">And what you lend he shall receive.</div>
+  </div>
+</div>
+</div>
+
+<p><span class="smcap">Joan.</span>—</p>
+
+<div class="poetry-container">
+<div class="poetry">
+  <div class="stanza">
+    <div class="verse indent2">You can’t. You can’t do that——</div>
+    <div class="verse indent2">You can’t raise up the sun when once it’s set;</div>
+    <div class="verse indent2">You can’t put new roots in us, when we’re old,</div><span class="pagenum" id="Page_15">[Pg 15]</span>
+    <div class="verse indent2">Dried up, and withered.</div>
+  </div>
+</div>
+</div>
+
+<p><span class="smcap">Snowman.</span>—</p>
+
+<div class="poetry-container">
+<div class="poetry">
+  <div class="stanza">
+    <div class="verse indent2">Yet within kind earth</div>
+    <div class="verse indent2">Dry seed goes sown</div>
+    <div class="verse indent2">And springs again to birth.</div>
+  </div>
+</div>
+</div>
+
+<p><span class="smcap">Joan.</span>—</p>
+
+<div class="poetry-container">
+<div class="poetry">
+  <div class="stanza">
+    <div class="verse indent2">I’ve ’ad enough of earth. I’ve sowed, I’ve reaped,</div>
+    <div class="verse indent2">I’ve gathered, and I’ve strawed. But me and ’im</div>
+    <div class="verse indent2">We won’t meet any more. He ’aven’t come,</div>
+    <div class="verse indent2">Nigh me—not for a year.</div>
+    <div class="verse indent2">And when he did come back—he went again</div>
+    <div class="verse indent2">Next day.</div>
+  </div>
+</div>
+</div>
+
+<p><span class="smcap">Snowman</span>. Went? Where?</p>
+
+<p><span class="smcap">Joan</span>. Nowhere. He roves about. Seeing the world, ’e calls it.
+Roving blood. That’s been ’is curse; and mind, ’is roving blood, it
+haven’t always roved. He liked his ease, he liked the victuals I give
+him well enough, he liked his fireside, and he liked his bed when I
+was by ’im. Ah! And then one day he’d ’ad enough of comfort, and was
+off,—looking for what? ’Ardship? He might have ’ad that ’ere if he’d
+but stayed. Aye, that ’e could—for it’s been ’ard enough—with they
+two there. Ah, you may look at ’em, they ’aven’t known trouble—yet
+they was with me all the time. Why, there’ve been days when I’ve not
+’ad enough to eat myself. And what ’ave fed me? Just to ’ear ’em laugh
+and think they ’aven’t known. What do you look at me like that for?
+What do you know? What did you come for? Say!</p>
+
+<p><span class="smcap">Snowman</span>. To bring you comfort.</p>
+
+<p><span class="smcap">Joan</span>. Comfort? I’ve got no place for comfort in me now. It
+isn’t that I want—it’s rest.</p>
+
+<p><span class="smcap">Snowman</span>. ’Tis rest I bring.</p>
+
+<p><span class="smcap">Joan</span>. Where’s ’e?</p>
+
+<p><span class="smcap">Snowman</span>. Here—near at hand. Come, come and do not be afraid.
+(<i>He takes her hand</i>)</p>
+
+<p><span class="smcap">Joan</span>. Oh, dearie me. This feels like death. Like death!</p>
+
+<p><span class="pagenum" id="Page_16">[Pg 16]</span></p>
+
+<p class="center">(<i>As they touch hands a mist draws over the stage, the walls
+of the house seem to fade away, the sound of the storm grows
+loud around them. They stand in a white world full of obscure
+movement and pale drifting forms.</i>)</p>
+
+<p><span class="smcap">Snowman.</span> What do you see?</p>
+
+<p><span class="smcap">Joan.</span> A waste of snow.</p>
+
+<p><span class="smcap">Snowman.</span> Anyone there?</p>
+
+<p><span class="smcap">Joan.</span> No one I know. No—only you. What? You say you saw him
+on the road, coming? How do you know that it was ’im? Yes—yes—’e was
+like that. But younger, ’andsomer than that,—not lame——</p>
+
+<div class="poetry-container">
+<div class="poetry">
+  <div class="stanza">
+    <div class="verse indent2">No, he was never lame—a young, young man,</div>
+    <div class="verse indent2">And strong!——</div>
+    <div class="verse indent2">Oh, lost his way? You say ’e’d lost his way?</div>
+    <div class="verse indent2">Well, maybe that might tire ’im just a bit,</div>
+    <div class="verse indent2">But oh, he’d find it! Oh, trust him for that!</div>
+    <div class="verse indent2">He’s been all round the world—and lost his way</div>
+    <div class="verse indent2">Through coming ’ome. Yes, yes, he’s coming ’ome.</div>
+    <div class="verse indent2">Ah! Now I see ’im. Yes, I’m ’ere, I’m ’ere!</div>
+    <div class="verse indent2">Waiting for yer,—waiting—expecting yer.</div>
+    <div class="verse indent2">Ah, never mind. Though yer don’t love me, still</div>
+    <div class="verse indent2">It’s back to me you come! Yer can’t ’elp that</div>
+    <div class="verse indent2">That’s ’ow God made yer. That’s why He made me.</div>
+    <div class="verse indent2">No! I can’t reach yer. No, he’s got my hand,</div>
+    <div class="verse indent2">Holding it, holding it,—and won’t leave go!</div>
+    <div class="verse indent2">I’d ’elp yer, if I could. I’d die for yer!</div>
+    <div class="verse indent2">But he won’t let me go.</div>
+    <div class="verse indent2">——I’m cold, I’m cold!</div>
+    <div class="verse indent2">Can’t see!—I’ve lost my way,</div>
+    <div class="verse indent2">And I shan’t—never—any more come home!</div>
+  </div>
+</div>
+</div>
+
+<p class="center">(<i>The snowman looses her hand, and she falls. The mist clears
+from a dark stage, the walls close in again, the chamber
+remains in darkness. A figure stumbles past the window, the
+door is<span class="pagenum" id="Page_17">[Pg 17]</span> thrown open, the Snowman stands aside. Enter</i>
+<span class="smcap">Jaspar</span>.)</p>
+
+<p><span class="smcap">Jaspar.</span>—</p>
+
+<div class="poetry-container">
+<div class="poetry">
+  <div class="stanza">
+    <div class="verse indent2">Home! Home, at last! Who’s there? Anyone there?</div>
+    <div class="verse indent2">What? Nobody? No fire? Oh, bitter cold——</div>
+    <div class="verse indent2">It feels like death!</div>
+  </div>
+</div>
+</div>
+
+<p class="center">(<i>Fumbles for match-box</i>)</p>
+
+<div class="poetry-container">
+<div class="poetry">
+  <div class="stanza">
+    <div class="verse indent2">Here, fool, give me a light!</div>
+    <div class="verse indent2">Light, can’t yer? Ah, what’s that, what’s that, what’s that?</div>
+    <div class="verse indent2">Who are yer? What for are you lying there?</div>
+    <div class="verse indent2">Get up! Get up! What makes ’e be so cold?</div>
+    <div class="verse indent2">So clammed?</div>
+  </div>
+</div>
+</div>
+
+<p class="center">(<i>Strikes a light</i>)</p>
+
+<div class="poetry-container">
+<div class="poetry">
+  <div class="stanza">
+    <div class="verse indent2">What the,—! My wife! It be my wife!</div>
+    <div class="verse indent2">Wife! Don’t ’e hear me? It be I, come back,</div>
+    <div class="verse indent2">Jaspar come back—Jaspar come home again——</div>
+    <div class="verse indent2">Jaspar—why don’t ’e answer? There, now there!</div>
+    <div class="verse indent2">Have that to warm yer. Oh, ye’ll soon come round,</div>
+    <div class="verse indent2">Ye’ve starved yerself, ye—! Ah—she’s dead, she’s dead!</div>
+  </div>
+</div>
+</div>
+
+<p class="center">(<i>He lifts her onto the chair by the hearth and now holds
+the candle to her face, then draws away with a growing fear of
+what other deaths may be there. He advances to the crib, and
+looks in on the sleeping children. He assures himself that they
+are alive. It startles him to fresh hope; he turns back to his
+wife</i>)</p>
+
+<div class="poetry-container">
+<div class="poetry">
+  <div class="stanza">
+    <div class="verse indent2">No, she ain’t dead, she can’t be, they’re alive!</div>
+    <div class="verse indent2">She wouldn’t leave ’em. No, she can’t be dead.</div>
+    <div class="verse indent2">Wife, do ’e hear? The children be alive.</div>
+    <div class="verse indent2">You wouldn’t go and leave ’em, no, not you——</div>
+    <div class="verse indent2">’Twouldn’t be like yer. There, my—there, come, come!</div><span class="pagenum" id="Page_18">[Pg 18]</span>
+    <div class="verse indent2">Take warmth o’ me,—out of my ’eart and soul!</div>
+    <div class="verse indent2">I’ll make ye warm.</div>
+  </div>
+</div>
+</div>
+
+<p class="center">(<i>He takes her to his heart</i>)</p>
+
+<div class="poetry-container">
+<div class="poetry">
+  <div class="stanza">
+    <div class="verse indent2">Why, I was coming ’ome.</div>
+    <div class="verse indent2">I’d ’a been yere before, but I lost my way,</div>
+    <div class="verse indent2">Got buried in the snow. Then I ’eard you</div>
+    <div class="verse indent2">A-callin’ me! I thought I saw your face,</div>
+    <div class="verse indent2">Then it all went, and then, my feet grew strong,</div>
+    <div class="verse indent2">Life come to me, and warmth, and here I be!</div>
+    <div class="verse indent2">Can’t ’e speak to me? Be ye gone so far</div>
+    <div class="verse indent2">As ’e can’t ’ear me? Not the word I’d say</div>
+    <div class="verse indent2">To tell ’e how I loved ’e?</div>
+    <div class="verse indent2">Ah, now I be in ’ell, I be in ’ell!</div>
+    <div class="verse indent2">And ’a won’t never know.</div>
+  </div>
+</div>
+</div>
+
+<p class="center">(<i>Her hand falls out across chair, pointing toward the
+crib</i>)</p>
+
+<div class="poetry-container">
+<div class="poetry">
+  <div class="stanza">
+    <div class="verse indent2">What’s that to say?</div>
+    <div class="verse indent2">Oh, the dear hand. Yes, I’ll look after ’em.</div>
+    <div class="verse indent2">They shan’t know want—and I won’t go away——</div>
+    <div class="verse indent2">The way I’d wish to go. I’ll bear my life</div>
+    <div class="verse indent2">And all the burden of it. There, there, my lass,</div>
+    <div class="verse indent2">Rest ye in peace, I’ll do my best by ’em!</div>
+    <div class="verse indent2">I’ll do my best.</div>
+  </div>
+</div>
+</div>
+
+<p class="center">(<i>He bends and kisses her on the lips. The Snowman makes a
+pass toward her with his hand. She moves, and opens her eyes,
+all dazed and dreaming</i>)</p>
+
+<p><span class="smcap">Joan.</span> Who’s that, who’s that got hold o’ me? Let go! I must go
+to ’im.</p>
+
+<p><span class="smcap">Jaspar.</span> No, no, bide ’e still. Here’s Jaspar!</p>
+
+<p><span class="smcap">Joan.</span> Jaspar!</p>
+
+<p><span class="smcap">Jaspar.</span> Oh, you be alive! (<i>He sinks down broken, with
+his head on her breast. She takes his<span class="pagenum" id="Page_19">[Pg 19]</span> head in her hands stroking it
+softly. The Snowman moves slowly to the door, fades through it, and
+disappears</i>)</p>
+
+<p><span class="smcap">Joan.</span> So you’ve come back, I knew you’d come—some day. What’s
+this? (<i>She touches the coat</i>)</p>
+
+<p><span class="smcap">Jaspar.</span> My coat. I found you lyin’ there cold, so I put it
+round yer. But you made no sign—until I thought as yer was dead.</p>
+
+<p><span class="smcap">Joan.</span> Dead? Would I leave ’em? Leave my little ’uns?</p>
+
+<p><span class="smcap">Jaspar.</span> Ah, there you do get home. It’s a true charge. It’s
+what I done.</p>
+
+<p><span class="smcap">Joan.</span> You ’ad the roving blood. You couldn’t ’elp it.</p>
+
+<p><span class="smcap">Jaspar.</span> It ain’t brought me no joy.</p>
+
+<p><span class="smcap">Joan.</span>—</p>
+
+<div class="poetry-container">
+<div class="poetry">
+  <div class="stanza">
+    <div class="verse indent2">Jaspar, I think you’ve come here in a dream.</div>
+    <div class="verse indent2">Put your arms round me and ’old me. Don’t let go.</div>
+    <div class="verse indent2">Help me to dream, I’d like for it to last</div>
+    <div class="verse indent2">Just one more hour—put your ’ead on my heart.</div>
+    <div class="verse indent2">And don’t you speak—don’t speak—I want to dream,</div>
+    <div class="verse indent2">You be come back again! I want to dream.</div>
+  </div>
+</div>
+</div>
+
+<p class="center">(<i>They lie still in each other’s arms. Dawn light begins to
+creep in. A sound of sliding snow is heard on the roof, a sharp
+twittering of birds; down across the window masses of snow fall
+in soft thunder. There follows a sound of dropping water: the
+thaw has begun. The outer world grows radiant with light. The
+doors of the cubby-bed fly open, the two children peep out. A
+soft but heavy crash of falling snow is heard. It strikes the
+door.</i>)</p>
+
+<p><span class="smcap">Mary.</span> Mother, what’s that? Get up, get up, it’s light!
+(<i>Jumps out of bed, followed by</i> <span class="smcap">Matthew</span>) Oh, come and
+look! The snow’s all falling—right down off the roof. Look how it’s
+letting go!</p>
+
+<p><span class="pagenum" id="Page_20">[Pg 20]</span></p>
+
+<p><span class="smcap">Matthew.</span> Oh, the snowman. Look at the snowman! Oh! (<i>Opens
+door</i>)</p>
+
+<p><span class="smcap">Mary.</span> Mother, the snowman’s tumbled in the night.</p>
+
+<p class="center">(<span class="smcap">Joan</span> <i>opens her eyes</i>.)</p>
+
+<p><span class="smcap">Joan.</span> Hush, hush, don’t wake ’im. Come ’e and look ’ere.</p>
+
+<p class="center">(<i>The children approach softly, curious and surprised.</i>)</p>
+
+<p><span class="smcap">Mary.</span> Who is it, mother?</p>
+
+<p><span class="smcap">Joan.</span> The snowman, my dear. He’s come to stay.</p>
+
+
+<p>CURTAIN.</p>
+
+
+<hr class="chap x-ebookmaker-drop">
+
+<div class="chapter">
+<p class="nobreak ph2" id="THE_WORLDS_BEST_PLAYS">THE WORLD’S BEST PLAYS</p>
+</div>
+
+<p class="center">By Celebrated European Authors</p>
+
+<hr class="double-top">
+<hr class="double-bot">
+
+<p>A NEW SERIES OF AMATEUR PLAYS BY THE BEST AUTHORS, ANCIENT AND MODERN,
+ESPECIALLY TRANSLATED WITH HISTORICAL NOTES, SUGGESTIONS FOR STAGING,
+Etc., FOR THE USE OF SCHOOLS, COLLEGES, AND DRAMATIC CLUBS</p>
+
+<p class="center big"><span class="smcap">Barrett H. Clark</span></p>
+
+<p class="center">General Editor</p>
+
+
+<div>
+<img class="drop-cap" src="images/image021.jpg" style="width: 4em" alt="W">
+</div>
+
+<p class="noindent drop-cap"><span class="smcap">With</span> the immensely increased demand for new plays for purposes of
+production by amateurs comes a correspondingly great demand for a
+careful selection of those plays which can be easily and well presented
+by clubs and colleges. The plays in the present series have been chosen
+with regard to their intrinsic value as drama and literature, and at
+the same time to their adaptability to the needs and limitations of
+such organizations.</p>
+
+<p>The Series, under the personal supervision of Mr. Barrett H. Clark,
+instructor in the department of Dramatic Literature at Chautauqua,
+New York, assistant stage manager and actor with Mrs. Fiske (season
+1912-1913), now comprises 44 titles, more will make their appearance
+during the year. Eventually there will be plays from ancient Greece
+and Rome, Italy, Spain, France, Russia, Germany, and the Scandinavian
+countries, representative of some of the best drama of all ages and
+lands.</p>
+
+<p>Each Play is prefaced by a concise historical note by Mr. Clark and
+with a few suggestions for staging.</p>
+
+<div class="chapter">
+
+<hr class="double-top">
+<hr class="double-bot">
+
+<p class="nobreak ph2" id="Plays_Now_Ready">Plays Now Ready</p>
+</div>
+
+
+<p class="noindent"><b>INDIAN SUMMER</b>, a comedy in one act by <span class="smcap">Meilhac</span> and
+<span class="smcap">Halevy</span>. This little play, by two of the most famous writers of
+comedy of the last century, has been played at the Comédie Francaise at
+Paris for upwards of forty years, and remains one of the brightest and
+most popular works of the period. <span class="smcap">Price 25 Cents.</span></p>
+
+<p class="noindent"><b>ROSALIE</b>, by <span class="smcap">Max Maurey</span>. A “Grand Guignol” comedy in one
+act, full of verve and clever dialogue. Rosalie, the stubborn maid,
+leads her none too amiable master and mistress into uncomfortable
+complications by refusing to open the front door to a supposed guest of
+wealth and influence. <span class="smcap">Price 25 Cents.</span></p>
+
+<p class="noindent"><b>MODESTY</b>, by <span class="smcap">Paul Hervieu</span>. A delightful trifle by one of
+the most celebrated of living dramatists. <span class="smcap">Price 25 Cents.</span></p>
+
+<p class="noindent"><b>THE ART OF BEING BORED</b>, (<i>Le Monde où l’on s’Ennuie</i>),
+a comedy in three acts by <span class="smcap">Edouard Pailleron</span>. Probably the
+best-known and most frequently acted comedy of manners in the realm
+of nineteenth century French drama. It is replete with wit and comic
+situations. For nearly forty years it has held the stage, while
+countless imitators have endeavored to reproduce its freshness and
+charm. <span class="smcap">Price 25 Cents.</span></p>
+
+<p class="noindent"><b>A MARRIAGE PROPOSAL</b>, by <span class="smcap">Anton Tchekhoff</span>, a comedy in
+one act, by one of the greatest of modern Russian writers. This little
+farce is very popular in Russia, and satirizes the peasants of that
+country in an amusing manner. <span class="smcap">Price 25 Cents.</span></p>
+
+<p class="noindent"><b>THE GREEN COAT</b>, by <span class="smcap">Alfred de Musset</span> and <span class="smcap">Emile
+Augier</span>. A slight and comic character sketch of the life of
+Bohemian artists in Paris, written by one of France’s greatest poets
+and one of her best-known dramatists. <span class="smcap">Price 25 Cents.</span></p>
+
+<p class="noindent"><b>THE WAGER</b>, by <span class="smcap">Giuseppe Giacosa</span>. This one act poetic
+comedy, written by the most celebrated dramatist of modern Italy, was
+the author’s first work. It treats of a wager made by a proud young
+page, who risks his life on the outcome of a game of chess. <span class="smcap">Price
+25 Cents.</span></p>
+
+<p class="noindent"><b>PANURGE’S SHEEP</b>, a comedy in one Act by <span class="smcap">Meilhac</span> and
+<span class="smcap">Halevy</span>. A famous and often-acted little play based upon the
+obstinacy of a charming woman, who is finally induced to marry. 1 man,
+2 women. <span class="smcap">Price 25 Cents.</span></p>
+
+<p class="noindent"><b>THE LAW-SUIT</b> (Der Prozess), a comedy in one act by
+<span class="smcap">Roderich Benedix</span>. A famous comedy by the well-known
+German-dramatist—author of “The Obstinate Family,” and “The Third
+Man.” The play is full of amusing situations and bright lines. 5 men.
+<span class="smcap">Price 25 Cents.</span></p>
+
+<p class="noindent"><b>THE THIRD MAN</b> (Der Dritte), a comedy in one act by <span class="smcap">Roderich
+Benedix</span>. A highly amusing little comedy based upon the obstinacy
+of human beings, and proves the truth of the saying that “love finds a
+way.” 3 women, 1 man. <span class="smcap">Price 25 Cents.</span></p>
+
+<p class="noindent"><b>THE GENTLEMAN TRADESMAN</b> (Le Bourgeois Gentile-homme), a comedy
+in four acts by <span class="smcap">Moliere</span>. One of the best-known comedies of the
+celebrated master of comedy. “The Gentleman Tradesman” ridicules the
+affectations of M. Jourdain, a rich parvenu. 9 men, 5 women. <span class="smcap">Price
+50 Cents.</span></p>
+
+<p class="noindent"><b>THE SICILIAN</b> (Le Sicilien), a farce in two scenes by
+<span class="smcap">Moliere</span>. One of the lighter comedies of intrigue. This play
+is laid in Sicily, and has to do with the capture of a beautiful Greek
+slave from her selfish and tyrannical master. 4 men, 3 women. <span class="smcap">Price
+25 Cents.</span></p>
+
+<p class="noindent"><b>DOCTOR LOVE</b> (L’Amour Medecine), a farce in three acts by
+<span class="smcap">Moliere</span>. An uproarious farce, satirizing the medical
+profession. Through it runs the story of a young girl who pretends to
+be ill in order that she may marry the man she loves. 5 men, 4 women.
+<span class="smcap">Price 25 Cents.</span></p>
+
+<p class="noindent"><b>THE AFFECTED YOUNG LADIES</b> (Les Precieuses Ridicules), a comedy
+in one act by <span class="smcap">Moliere</span>. The famous satire on intellectual and
+social affectation. Like most of Moliere’s plays, the theme in this is
+ever modern. 3 women, 6 men. <span class="smcap">Price 25 Cents.</span></p>
+
+<p class="noindent"><b>I’M GOING!</b> A comedy in one act by <span class="smcap">Tristan Bernard</span>. A
+delightful bit of comedy of obstinacy and reconciliation. 1 man, 1
+woman. <span class="smcap">Price 25 Cents.</span></p>
+
+<p class="noindent"><b>THE FAIRY</b> (La Fee), a romantic comedy in one act by <span class="smcap">Octave
+Feuillet</span>. Laid in a hut in Normandy, this little comedy is full
+of poetic charm and quiet humor. The element of the supernatural is
+introduced in order to drive home a strong lesson. 1 woman, 3 men.
+<span class="smcap">Price 25 Cents.</span></p>
+
+<p class="noindent"><b>THE VILLAGE</b> (Le Village), a comedy in one act by <span class="smcap">Octave
+Feuillet</span>. The author here paints the picture of an elderly couple,
+and shows that they have not realized their happiness until it is
+on the point of being taken from them. 2 women, 2 men. <span class="smcap">Price 25
+Cents.</span></p>
+
+<p class="noindent"><b>THE DOCTOR IN SPITE OF HIMSELF</b>, by <span class="smcap">Moliere</span>. A famous
+farce by the greatest of French dramatists. Sganarelle has to be beaten
+before he will acknowledge that he is a doctor, which he is not. He
+then works apparently miraculous cures. The play is a sharp satire on
+the medical profession in the 17th Century. <span class="smcap">Price 25 Cents.</span></p>
+
+<p class="noindent"><b>BRIGNOL AND HIS DAUGHTER</b>, by <span class="smcap">Capus</span>. The first comedy
+in English of the most sprightly and satirical of present-day French
+dramatists. <span class="smcap">Price 50 Cents.</span></p>
+
+<p class="noindent"><b>CHOOSING A CAREER</b>, by <span class="smcap">G. A. de Caillavet</span>. Written by
+one of the authors of “Love Watches.” A farce of mistaken identity,
+full of humorous situations and bright lines. <span class="smcap">Price 25 Cents.</span></p>
+
+<p class="noindent"><b>FRENCH WITHOUT A MASTER</b>, by <span class="smcap">Tristan Bernard</span>. A clever
+farce by one of the most successful of French dramatists. It is
+concerned with the difficulties of a bogus-interpreter who does not
+know a word of French. <span class="smcap">Price 25 Cents.</span></p>
+
+<p class="noindent"><b>PATER NOSTER</b>, a poetic play in one act, by <span class="smcap">Francois
+Coppee</span>. A pathetic incident of the time of the Paris Commune, in
+1871. <span class="smcap">Price 25 Cents.</span></p>
+
+<p class="noindent"><b>THE ROMANCERS</b>, a comedy in three acts, by <span class="smcap">Edmond
+Rostand</span>. New translation of this celebrated and charming little
+romantic play by the famous author of “Cyrano de Bergerac” and
+“Chantecler.” <span class="smcap">Price 25 Cents.</span></p>
+
+<p class="noindent"><b>THE MERCHANT GENTLEMAN</b>, (Le Bourgeois Gentil-homme), by
+<span class="smcap">Moliere</span>. New translation of one of Moliere’s comic
+masterpieces, a play which is peculiarly well adapted to amateur
+production. <span class="smcap">Price 50 Cents.</span></p>
+
+<p class="noindent"><b>THE HOUSE OF FOURCHAMBAULT</b>, by <span class="smcap">Emile Augier</span>. One of the
+greatest of recent French family dramas. Although the play is serious
+in tone, it contains touches which entitle it to a position among the
+best comedies of manners of the times. <span class="smcap">Price 50 Cents.</span></p>
+
+<p class="noindent"><b>PANURGE’S SHEEP</b>, a comedy in one Act by <span class="smcap">Meilhac</span> and
+<span class="smcap">Halevy</span>. A famous and often-acted little play based upon the
+obstinacy of a charming woman, who is finally induced to marry. 1 man,
+2 women. <span class="smcap">Price 25 Cents.</span></p>
+
+<p class="noindent"><b>THE LAW-SUIT</b>, (Der Prozess), a comedy in one act by
+<span class="smcap">Roderich Benedix</span>. A famous comedy by the well-known
+German-dramatist—author of “The Obstinate Family,” and “The Third
+Man.” The play is full of amusing situations and bright lines. 5 men.
+<span class="smcap">Price 25 Cents.</span></p>
+
+<p class="noindent"><b>THE THIRD MAN</b> (Der Dritte), a comedy in one act by <span class="smcap">Roderich
+Benedix</span>. A highly amusing little comedy based upon the obstinacy
+of human beings, and proves the truth of the saying that “love finds a
+way.” 3 women, 1 man. <span class="smcap">Price 25 Cents.</span></p>
+
+<p class="noindent"><b>THE GENTLEMAN TRADESMAN</b> (Le Bourgeois Gentile-homme), a comedy
+in four acts by <span class="smcap">Moliere</span>. One of the best-known comedies of the
+celebrated master of comedy. “The Gentleman Tradesman” ridicules the
+affectations of M. Jourdain, a rich parvenu. 9 men, 5 women. <span class="smcap">Price
+50 Cents.</span></p>
+
+<p class="noindent"><b>THE SICILIAN</b> (Le Sicilien), a farce in two scenes by
+<span class="smcap">Moliere</span>. One of the lighter comedies of intrigue. This play
+is laid in Sicily, and has to do with the capture of a beautiful Greek
+slave from her selfish and tyrannical master. 4 men, 3 women. <span class="smcap">Price
+25 Cents.</span></p>
+
+<p class="noindent"><b>DOCTOR LOVE</b> (L’Amour Medecine), a farce in three acts by
+<span class="smcap">Moliere</span>. An uproarious farce, satirizing the medical
+profession. Through it runs the story of a young girl who pretends to
+be ill in order that she may marry the man she loves. 5 men, 4 women.
+<span class="smcap">Price 25 Cents.</span></p>
+
+<p class="noindent"><b>THE AFFECTED YOUNG LADIES</b> (Les Precieuses Ridicules), a comedy
+in one act by <span class="smcap">Moliere</span>. The famous satire on intellectual and
+social affectation. Like most of Moliere’s plays, the theme in this is
+ever modern. 3 women, 6 men. <span class="smcap">Price 25 Cents.</span></p>
+
+<p class="noindent"><b>I’M GOING!</b> A comedy in one act by <span class="smcap">Tristan Bernard</span>. A
+delightful bit of comedy of obstinacy and reconciliation. 1 man, 1
+woman. <span class="smcap">Price 25 Cents.</span></p>
+
+<p class="noindent"><b>THE FAIRY</b> (La Fee), a romantic comedy in one act by <span class="smcap">Octave
+Feuillet</span>. Laid in a hut in Normandy, this little comedy is full
+of poetic charm and quiet humor. The element of the supernatural is
+introduced in order to drive home a strong lesson. 1 woman, 3 men.
+<span class="smcap">Price 25 Cents.</span></p>
+
+<p class="noindent"><b>THE VILLAGE</b> (Le Village), a comedy in one act by <span class="smcap">Octave
+Feuillet</span>. The author here paints the picture of an elderly couple,
+and shows that they have not realized their happiness until it is
+on the point of being taken from them. 2 women, 2 men. <span class="smcap">Price 25
+Cents.</span></p>
+
+<p class="noindent"><b>THE BENEFICENT BEAR</b>, a comedy in three acts, by
+<span class="smcap">Goldoni</span>. One of the best-known comedies of the Father of
+Italian Comedy. A costume piece laid in 18th century France, the
+principal character in which is a good-hearted, though gruff, old
+uncle. 4 men, 3 women. <span class="smcap">Price 25 Cents.</span></p>
+
+<p class="noindent"><b>GRAMMAR</b> (La Grammaire), a farce in one act by <span class="smcap">Labiche</span>.
+An amusing and charming comedy by one of the greatest of 19th century
+French dramatists. 4 men, 1 woman. <span class="smcap">Price 25 Cents.</span></p>
+
+<p class="noindent"><b>THE TWO COWARDS</b> (Les Deux Timides), a comedy in one act by
+<span class="smcap">Labiche</span>. A very amusing and human little comedy, in which a
+strong-willed girl helps her father choose for her the man she wishes
+to marry. 2 women, 3 men. <span class="smcap">Price 25 Cents.</span></p>
+
+<p class="noindent"><b>MASTER PATELIN, SOLICITOR</b>, a comedy in three acts. Special
+version by <span class="smcap">Brueys</span>. One of the most famous of early French
+farces. The setting and character belong to the late Middle Ages. The
+play is concerned with the crooked dealings of a clever lawyer. 7 men,
+2 women. <span class="smcap">Price 25 Cents.</span></p>
+
+<p class="noindent"><b>CRISPIN, HIS MASTER’S RIVAL</b>, a comedy in one act by <span class="smcap">Le
+Sage</span>. A famous comedy by the author of “Gil Blas,” concerned with
+the pranks of two clever valets. 18th century costumes and settings. 4
+men, 3 women. <span class="smcap">Price 25 Cents.</span></p>
+
+<p class="noindent"><b>THE LEGACY</b>, a comedy in one act by <span class="smcap">Marivaux</span>. A delicate
+high comedy of intrigue. Marivaux one of the masters of old French
+comedy, and this play is full of deft touches of characterization. 2
+women, 4 men. <span class="smcap">Price 25 Cents.</span></p>
+
+<p class="noindent"><b>AFTER THE HONEYMOON</b>, a farce in one act by <span class="smcap">Wolfgang
+Gyalui</span>. A Hungarian farce full of brilliant dialog and movement. 1
+man, 1 woman. <span class="smcap">Price 25 Cents.</span></p>
+
+<p class="noindent"><b>A CHRISTMAS TALE</b>, a poetic play by <span class="smcap">Maurice Bouchor</span>.
+A beautiful little miracle play of love and devotion, laid in 15th
+century Paris. 2 men, 2 women. <span class="smcap">Price 25 Cents.</span></p>
+
+<p class="noindent"><b>CRAINQUEBILLE</b>, a play in three scenes by <span class="smcap">Anatole
+France</span>. A delightful series of pictures of Parisian street life,
+by the author of “The Man Who Married a Dumb Wife.” 12 men, 6 women.
+<span class="smcap">Price 25 Cents.</span></p>
+
+<p class="noindent"><b>JEAN-MARIE</b>, a poetic play in one act by <span class="smcap">Andre Theuriet</span>.
+A pathetic play of Norman peasant life. 2 men, 1 woman. <span class="smcap">Price 25
+Cents.</span></p>
+
+<p class="noindent"><b>THE REBOUND</b>, a comedy in one act by <span class="smcap">L. B. Picard</span>. A
+clever comedy of intrigue, and a satire of social position. 2 women, 5
+men. <span class="smcap">Price 25 Cents.</span></p>
+
+<p class="noindent"><b>THE DOCTOR IN SPITE OF HIMSELF</b>, by <span class="smcap">Moliere</span>. A famous
+farce by the greatest of French dramatists. Sganarelle has to be beaten
+before he will acknowledge that he is a doctor, which he is not. He
+then works apparently miraculous cures. The play is a sharp satire on
+the medical profession in the 17th Century. <span class="smcap">Price 25 Cents.</span></p>
+
+<p class="noindent"><b>BRIGNOL AND HIS DAUGHTER</b>, by <span class="smcap">Capus</span>. The first comedy
+in English of the most sprightly and satirical of present-day French
+dramatists. <span class="smcap">Price 50 Cents.</span></p>
+
+<p class="noindent"><b>CHOOSING A CAREER</b>, by <span class="smcap">G. A. de Caillavet</span>. Written by
+one of the authors of “Love Watches.” A farce of mistaken identity,
+full of humorous situations and bright lines. <span class="smcap">Price 25 Cents.</span></p>
+
+<p class="noindent"><b>FRENCH WITHOUT A MASTER</b>, by <span class="smcap">Tristan Bernard</span>. A clever
+farce by one of the most successful of French dramatists. It is
+concerned with the difficulties of a bogus-interpreter who does not
+know a word of French. <span class="smcap">Price 25 Cents.</span></p>
+
+<p class="noindent"><b>PATER NOSTER</b>, a poetic play in one act, by <span class="smcap">Francois
+Coppee</span>. A pathetic incident of the time of the Paris Commune, in
+1871. <span class="smcap">Price 25 Cents.</span></p>
+
+<p class="noindent"><b>THE ROMANCERS</b>, a comedy in three acts, by <span class="smcap">Edmond
+Rostand</span>. New translation of this celebrated and charming little
+romantic play by the famous author of “Cyrano de Bergerac” and
+“Chantecler.” <span class="smcap">Price 25 Cents.</span></p>
+
+<p class="noindent"><b>THE MERCHANT GENTLEMAN</b> (Le Bourgeois Gentil-homme), by
+<span class="smcap">Moliere</span>. New translation of one of Moliere’s comic
+masterpieces, a play which is peculiarly well adapted to amateur
+production. <span class="smcap">Price 50 Cents.</span>
+</p>
+<hr class="double-top">
+<hr class="double-bot">
+
+<div style='display:block; margin-top:4em'>*** END OF THE PROJECT GUTENBERG EBOOK THE SNOW MAN ***</div>
+<div style='text-align:left'>
+
+<div style='display:block; margin:1em 0'>
+Updated editions will replace the previous one&#8212;the old editions will
+be renamed.
+</div>
+
+<div style='display:block; margin:1em 0'>
+Creating the works from print editions not protected by U.S. copyright
+law means that no one owns a United States copyright in these works,
+so the Foundation (and you!) can copy and distribute it in the United
+States without permission and without paying copyright
+royalties. Special rules, set forth in the General Terms of Use part
+of this license, apply to copying and distributing Project
+Gutenberg&#8482; electronic works to protect the PROJECT GUTENBERG&#8482;
+concept and trademark. Project Gutenberg is a registered trademark,
+and may not be used if you charge for an eBook, except by following
+the terms of the trademark license, including paying royalties for use
+of the Project Gutenberg trademark. If you do not charge anything for
+copies of this eBook, complying with the trademark license is very
+easy. You may use this eBook for nearly any purpose such as creation
+of derivative works, reports, performances and research. Project
+Gutenberg eBooks may be modified and printed and given away&#8212;you may
+do practically ANYTHING in the United States with eBooks not protected
+by U.S. copyright law. Redistribution is subject to the trademark
+license, especially commercial redistribution.
+</div>
+
+<div style='margin-top:1em; font-size:1.1em; text-align:center'>START: FULL LICENSE</div>
+<div style='text-align:center;font-size:0.9em'>THE FULL PROJECT GUTENBERG LICENSE</div>
+<div style='text-align:center;font-size:0.9em'>PLEASE READ THIS BEFORE YOU DISTRIBUTE OR USE THIS WORK</div>
+
+<div style='display:block; margin:1em 0'>
+To protect the Project Gutenberg&#8482; mission of promoting the free
+distribution of electronic works, by using or distributing this work
+(or any other work associated in any way with the phrase &#8220;Project
+Gutenberg&#8221;), you agree to comply with all the terms of the Full
+Project Gutenberg&#8482; License available with this file or online at
+www.gutenberg.org/license.
+</div>
+
+<div style='display:block; font-size:1.1em; margin:1em 0; font-weight:bold'>
+Section 1. General Terms of Use and Redistributing Project Gutenberg&#8482; electronic works
+</div>
+
+<div style='display:block; margin:1em 0'>
+1.A. By reading or using any part of this Project Gutenberg&#8482;
+electronic work, you indicate that you have read, understand, agree to
+and accept all the terms of this license and intellectual property
+(trademark/copyright) agreement. If you do not agree to abide by all
+the terms of this agreement, you must cease using and return or
+destroy all copies of Project Gutenberg&#8482; electronic works in your
+possession. If you paid a fee for obtaining a copy of or access to a
+Project Gutenberg&#8482; electronic work and you do not agree to be bound
+by the terms of this agreement, you may obtain a refund from the person
+or entity to whom you paid the fee as set forth in paragraph 1.E.8.
+</div>
+
+<div style='display:block; margin:1em 0'>
+1.B. &#8220;Project Gutenberg&#8221; is a registered trademark. It may only be
+used on or associated in any way with an electronic work by people who
+agree to be bound by the terms of this agreement. There are a few
+things that you can do with most Project Gutenberg&#8482; electronic works
+even without complying with the full terms of this agreement. See
+paragraph 1.C below. There are a lot of things you can do with Project
+Gutenberg&#8482; electronic works if you follow the terms of this
+agreement and help preserve free future access to Project Gutenberg&#8482;
+electronic works. See paragraph 1.E below.
+</div>
+
+<div style='display:block; margin:1em 0'>
+1.C. The Project Gutenberg Literary Archive Foundation (&#8220;the
+Foundation&#8221; or PGLAF), owns a compilation copyright in the collection
+of Project Gutenberg&#8482; electronic works. Nearly all the individual
+works in the collection are in the public domain in the United
+States. If an individual work is unprotected by copyright law in the
+United States and you are located in the United States, we do not
+claim a right to prevent you from copying, distributing, performing,
+displaying or creating derivative works based on the work as long as
+all references to Project Gutenberg are removed. Of course, we hope
+that you will support the Project Gutenberg&#8482; mission of promoting
+free access to electronic works by freely sharing Project Gutenberg&#8482;
+works in compliance with the terms of this agreement for keeping the
+Project Gutenberg&#8482; name associated with the work. You can easily
+comply with the terms of this agreement by keeping this work in the
+same format with its attached full Project Gutenberg&#8482; License when
+you share it without charge with others.
+</div>
+
+<div style='display:block; margin:1em 0'>
+1.D. The copyright laws of the place where you are located also govern
+what you can do with this work. Copyright laws in most countries are
+in a constant state of change. If you are outside the United States,
+check the laws of your country in addition to the terms of this
+agreement before downloading, copying, displaying, performing,
+distributing or creating derivative works based on this work or any
+other Project Gutenberg&#8482; work. The Foundation makes no
+representations concerning the copyright status of any work in any
+country other than the United States.
+</div>
+
+<div style='display:block; margin:1em 0'>
+1.E. Unless you have removed all references to Project Gutenberg:
+</div>
+
+<div style='display:block; margin:1em 0'>
+1.E.1. The following sentence, with active links to, or other
+immediate access to, the full Project Gutenberg&#8482; License must appear
+prominently whenever any copy of a Project Gutenberg&#8482; work (any work
+on which the phrase &#8220;Project Gutenberg&#8221; appears, or with which the
+phrase &#8220;Project Gutenberg&#8221; is associated) is accessed, displayed,
+performed, viewed, copied or distributed:
+</div>
+
+<blockquote>
+  <div style='display:block; margin:1em 0'>
+    This eBook is for the use of anyone anywhere in the United States and most
+    other parts of the world at no cost and with almost no restrictions
+    whatsoever. You may copy it, give it away or re-use it under the terms
+    of the Project Gutenberg License included with this eBook or online
+    at <a href="https://www.gutenberg.org">www.gutenberg.org</a>. If you
+    are not located in the United States, you will have to check the laws
+    of the country where you are located before using this eBook.
+  </div>
+</blockquote>
+
+<div style='display:block; margin:1em 0'>
+1.E.2. If an individual Project Gutenberg&#8482; electronic work is
+derived from texts not protected by U.S. copyright law (does not
+contain a notice indicating that it is posted with permission of the
+copyright holder), the work can be copied and distributed to anyone in
+the United States without paying any fees or charges. If you are
+redistributing or providing access to a work with the phrase &#8220;Project
+Gutenberg&#8221; associated with or appearing on the work, you must comply
+either with the requirements of paragraphs 1.E.1 through 1.E.7 or
+obtain permission for the use of the work and the Project Gutenberg&#8482;
+trademark as set forth in paragraphs 1.E.8 or 1.E.9.
+</div>
+
+<div style='display:block; margin:1em 0'>
+1.E.3. If an individual Project Gutenberg&#8482; electronic work is posted
+with the permission of the copyright holder, your use and distribution
+must comply with both paragraphs 1.E.1 through 1.E.7 and any
+additional terms imposed by the copyright holder. Additional terms
+will be linked to the Project Gutenberg&#8482; License for all works
+posted with the permission of the copyright holder found at the
+beginning of this work.
+</div>
+
+<div style='display:block; margin:1em 0'>
+1.E.4. Do not unlink or detach or remove the full Project Gutenberg&#8482;
+License terms from this work, or any files containing a part of this
+work or any other work associated with Project Gutenberg&#8482;.
+</div>
+
+<div style='display:block; margin:1em 0'>
+1.E.5. Do not copy, display, perform, distribute or redistribute this
+electronic work, or any part of this electronic work, without
+prominently displaying the sentence set forth in paragraph 1.E.1 with
+active links or immediate access to the full terms of the Project
+Gutenberg&#8482; License.
+</div>
+
+<div style='display:block; margin:1em 0'>
+1.E.6. You may convert to and distribute this work in any binary,
+compressed, marked up, nonproprietary or proprietary form, including
+any word processing or hypertext form. However, if you provide access
+to or distribute copies of a Project Gutenberg&#8482; work in a format
+other than &#8220;Plain Vanilla ASCII&#8221; or other format used in the official
+version posted on the official Project Gutenberg&#8482; website
+(www.gutenberg.org), you must, at no additional cost, fee or expense
+to the user, provide a copy, a means of exporting a copy, or a means
+of obtaining a copy upon request, of the work in its original &#8220;Plain
+Vanilla ASCII&#8221; or other form. Any alternate format must include the
+full Project Gutenberg&#8482; License as specified in paragraph 1.E.1.
+</div>
+
+<div style='display:block; margin:1em 0'>
+1.E.7. Do not charge a fee for access to, viewing, displaying,
+performing, copying or distributing any Project Gutenberg&#8482; works
+unless you comply with paragraph 1.E.8 or 1.E.9.
+</div>
+
+<div style='display:block; margin:1em 0'>
+1.E.8. You may charge a reasonable fee for copies of or providing
+access to or distributing Project Gutenberg&#8482; electronic works
+provided that:
+</div>
+
+<div style='margin-left:0.7em;'>
+    <div style='text-indent:-0.7em'>
+        &#8226; You pay a royalty fee of 20% of the gross profits you derive from
+        the use of Project Gutenberg&#8482; works calculated using the method
+        you already use to calculate your applicable taxes. The fee is owed
+        to the owner of the Project Gutenberg&#8482; trademark, but he has
+        agreed to donate royalties under this paragraph to the Project
+        Gutenberg Literary Archive Foundation. Royalty payments must be paid
+        within 60 days following each date on which you prepare (or are
+        legally required to prepare) your periodic tax returns. Royalty
+        payments should be clearly marked as such and sent to the Project
+        Gutenberg Literary Archive Foundation at the address specified in
+        Section 4, &#8220;Information about donations to the Project Gutenberg
+        Literary Archive Foundation.&#8221;
+    </div>
+
+    <div style='text-indent:-0.7em'>
+        &#8226; You provide a full refund of any money paid by a user who notifies
+        you in writing (or by e-mail) within 30 days of receipt that s/he
+        does not agree to the terms of the full Project Gutenberg&#8482;
+        License. You must require such a user to return or destroy all
+        copies of the works possessed in a physical medium and discontinue
+        all use of and all access to other copies of Project Gutenberg&#8482;
+        works.
+    </div>
+
+    <div style='text-indent:-0.7em'>
+        &#8226; You provide, in accordance with paragraph 1.F.3, a full refund of
+        any money paid for a work or a replacement copy, if a defect in the
+        electronic work is discovered and reported to you within 90 days of
+        receipt of the work.
+    </div>
+
+    <div style='text-indent:-0.7em'>
+        &#8226; You comply with all other terms of this agreement for free
+        distribution of Project Gutenberg&#8482; works.
+    </div>
+</div>
+
+<div style='display:block; margin:1em 0'>
+1.E.9. If you wish to charge a fee or distribute a Project
+Gutenberg&#8482; electronic work or group of works on different terms than
+are set forth in this agreement, you must obtain permission in writing
+from the Project Gutenberg Literary Archive Foundation, the manager of
+the Project Gutenberg&#8482; trademark. Contact the Foundation as set
+forth in Section 3 below.
+</div>
+
+<div style='display:block; margin:1em 0'>
+1.F.
+</div>
+
+<div style='display:block; margin:1em 0'>
+1.F.1. Project Gutenberg volunteers and employees expend considerable
+effort to identify, do copyright research on, transcribe and proofread
+works not protected by U.S. copyright law in creating the Project
+Gutenberg&#8482; collection. Despite these efforts, Project Gutenberg&#8482;
+electronic works, and the medium on which they may be stored, may
+contain &#8220;Defects,&#8221; such as, but not limited to, incomplete, inaccurate
+or corrupt data, transcription errors, a copyright or other
+intellectual property infringement, a defective or damaged disk or
+other medium, a computer virus, or computer codes that damage or
+cannot be read by your equipment.
+</div>
+
+<div style='display:block; margin:1em 0'>
+1.F.2. LIMITED WARRANTY, DISCLAIMER OF DAMAGES - Except for the &#8220;Right
+of Replacement or Refund&#8221; described in paragraph 1.F.3, the Project
+Gutenberg Literary Archive Foundation, the owner of the Project
+Gutenberg&#8482; trademark, and any other party distributing a Project
+Gutenberg&#8482; electronic work under this agreement, disclaim all
+liability to you for damages, costs and expenses, including legal
+fees. YOU AGREE THAT YOU HAVE NO REMEDIES FOR NEGLIGENCE, STRICT
+LIABILITY, BREACH OF WARRANTY OR BREACH OF CONTRACT EXCEPT THOSE
+PROVIDED IN PARAGRAPH 1.F.3. YOU AGREE THAT THE FOUNDATION, THE
+TRADEMARK OWNER, AND ANY DISTRIBUTOR UNDER THIS AGREEMENT WILL NOT BE
+LIABLE TO YOU FOR ACTUAL, DIRECT, INDIRECT, CONSEQUENTIAL, PUNITIVE OR
+INCIDENTAL DAMAGES EVEN IF YOU GIVE NOTICE OF THE POSSIBILITY OF SUCH
+DAMAGE.
+</div>
+
+<div style='display:block; margin:1em 0'>
+1.F.3. LIMITED RIGHT OF REPLACEMENT OR REFUND - If you discover a
+defect in this electronic work within 90 days of receiving it, you can
+receive a refund of the money (if any) you paid for it by sending a
+written explanation to the person you received the work from. If you
+received the work on a physical medium, you must return the medium
+with your written explanation. The person or entity that provided you
+with the defective work may elect to provide a replacement copy in
+lieu of a refund. If you received the work electronically, the person
+or entity providing it to you may choose to give you a second
+opportunity to receive the work electronically in lieu of a refund. If
+the second copy is also defective, you may demand a refund in writing
+without further opportunities to fix the problem.
+</div>
+
+<div style='display:block; margin:1em 0'>
+1.F.4. Except for the limited right of replacement or refund set forth
+in paragraph 1.F.3, this work is provided to you &#8216;AS-IS&#8217;, WITH NO
+OTHER WARRANTIES OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT
+LIMITED TO WARRANTIES OF MERCHANTABILITY OR FITNESS FOR ANY PURPOSE.
+</div>
+
+<div style='display:block; margin:1em 0'>
+1.F.5. Some states do not allow disclaimers of certain implied
+warranties or the exclusion or limitation of certain types of
+damages. If any disclaimer or limitation set forth in this agreement
+violates the law of the state applicable to this agreement, the
+agreement shall be interpreted to make the maximum disclaimer or
+limitation permitted by the applicable state law. The invalidity or
+unenforceability of any provision of this agreement shall not void the
+remaining provisions.
+</div>
+
+<div style='display:block; margin:1em 0'>
+1.F.6. INDEMNITY - You agree to indemnify and hold the Foundation, the
+trademark owner, any agent or employee of the Foundation, anyone
+providing copies of Project Gutenberg&#8482; electronic works in
+accordance with this agreement, and any volunteers associated with the
+production, promotion and distribution of Project Gutenberg&#8482;
+electronic works, harmless from all liability, costs and expenses,
+including legal fees, that arise directly or indirectly from any of
+the following which you do or cause to occur: (a) distribution of this
+or any Project Gutenberg&#8482; work, (b) alteration, modification, or
+additions or deletions to any Project Gutenberg&#8482; work, and (c) any
+Defect you cause.
+</div>
+
+<div style='display:block; font-size:1.1em; margin:1em 0; font-weight:bold'>
+Section 2. Information about the Mission of Project Gutenberg&#8482;
+</div>
+
+<div style='display:block; margin:1em 0'>
+Project Gutenberg&#8482; is synonymous with the free distribution of
+electronic works in formats readable by the widest variety of
+computers including obsolete, old, middle-aged and new computers. It
+exists because of the efforts of hundreds of volunteers and donations
+from people in all walks of life.
+</div>
+
+<div style='display:block; margin:1em 0'>
+Volunteers and financial support to provide volunteers with the
+assistance they need are critical to reaching Project Gutenberg&#8482;&#8217;s
+goals and ensuring that the Project Gutenberg&#8482; collection will
+remain freely available for generations to come. In 2001, the Project
+Gutenberg Literary Archive Foundation was created to provide a secure
+and permanent future for Project Gutenberg&#8482; and future
+generations. To learn more about the Project Gutenberg Literary
+Archive Foundation and how your efforts and donations can help, see
+Sections 3 and 4 and the Foundation information page at www.gutenberg.org.
+</div>
+
+<div style='display:block; font-size:1.1em; margin:1em 0; font-weight:bold'>
+Section 3. Information about the Project Gutenberg Literary Archive Foundation
+</div>
+
+<div style='display:block; margin:1em 0'>
+The Project Gutenberg Literary Archive Foundation is a non-profit
+501(c)(3) educational corporation organized under the laws of the
+state of Mississippi and granted tax exempt status by the Internal
+Revenue Service. The Foundation&#8217;s EIN or federal tax identification
+number is 64-6221541. Contributions to the Project Gutenberg Literary
+Archive Foundation are tax deductible to the full extent permitted by
+U.S. federal laws and your state&#8217;s laws.
+</div>
+
+<div style='display:block; margin:1em 0'>
+The Foundation&#8217;s business office is located at 809 North 1500 West,
+Salt Lake City, UT 84116, (801) 596-1887. Email contact links and up
+to date contact information can be found at the Foundation&#8217;s website
+and official page at www.gutenberg.org/contact
+</div>
+
+<div style='display:block; font-size:1.1em; margin:1em 0; font-weight:bold'>
+Section 4. Information about Donations to the Project Gutenberg Literary Archive Foundation
+</div>
+
+<div style='display:block; margin:1em 0'>
+Project Gutenberg&#8482; depends upon and cannot survive without widespread
+public support and donations to carry out its mission of
+increasing the number of public domain and licensed works that can be
+freely distributed in machine-readable form accessible by the widest
+array of equipment including outdated equipment. Many small donations
+($1 to $5,000) are particularly important to maintaining tax exempt
+status with the IRS.
+</div>
+
+<div style='display:block; margin:1em 0'>
+The Foundation is committed to complying with the laws regulating
+charities and charitable donations in all 50 states of the United
+States. Compliance requirements are not uniform and it takes a
+considerable effort, much paperwork and many fees to meet and keep up
+with these requirements. We do not solicit donations in locations
+where we have not received written confirmation of compliance. To SEND
+DONATIONS or determine the status of compliance for any particular state
+visit <a href="https://www.gutenberg.org/donate/">www.gutenberg.org/donate</a>.
+</div>
+
+<div style='display:block; margin:1em 0'>
+While we cannot and do not solicit contributions from states where we
+have not met the solicitation requirements, we know of no prohibition
+against accepting unsolicited donations from donors in such states who
+approach us with offers to donate.
+</div>
+
+<div style='display:block; margin:1em 0'>
+International donations are gratefully accepted, but we cannot make
+any statements concerning tax treatment of donations received from
+outside the United States. U.S. laws alone swamp our small staff.
+</div>
+
+<div style='display:block; margin:1em 0'>
+Please check the Project Gutenberg web pages for current donation
+methods and addresses. Donations are accepted in a number of other
+ways including checks, online payments and credit card donations. To
+donate, please visit: www.gutenberg.org/donate
+</div>
+
+<div style='display:block; font-size:1.1em; margin:1em 0; font-weight:bold'>
+Section 5. General Information About Project Gutenberg&#8482; electronic works
+</div>
+
+<div style='display:block; margin:1em 0'>
+Professor Michael S. Hart was the originator of the Project
+Gutenberg&#8482; concept of a library of electronic works that could be
+freely shared with anyone. For forty years, he produced and
+distributed Project Gutenberg&#8482; eBooks with only a loose network of
+volunteer support.
+</div>
+
+<div style='display:block; margin:1em 0'>
+Project Gutenberg&#8482; eBooks are often created from several printed
+editions, all of which are confirmed as not protected by copyright in
+the U.S. unless a copyright notice is included. Thus, we do not
+necessarily keep eBooks in compliance with any particular paper
+edition.
+</div>
+
+<div style='display:block; margin:1em 0'>
+Most people start at our website which has the main PG search
+facility: <a href="https://www.gutenberg.org">www.gutenberg.org</a>.
+</div>
+
+<div style='display:block; margin:1em 0'>
+This website includes information about Project Gutenberg&#8482;,
+including how to make donations to the Project Gutenberg Literary
+Archive Foundation, how to help produce our new eBooks, and how to
+subscribe to our email newsletter to hear about new eBooks.
+</div>
+
+</div>
+</body>
+</html>
